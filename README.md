@@ -1,3 +1,4 @@
 # UnityInterface
 Dies sind die ersten Übungen zu Unity
-Die ist die zweite Uebung
+Dies ist die zweite Uebung
+Dies ist die dritte Uebung
