@@ -90,6 +90,16 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
 
+        //Instanzen der Klasse Mensch erstellen 
+        Mensch mensch1 = new Mensch(12, "Karl", "Schueler");
+        Mensch mensch2 = new Mensch(18, "Sascha", "AzuBi");
+        Mensch mensch3 = new Mensch(30, "Uwe", "Astronaut");
+
+        //Aufruf der Methode innerhalb der Klasse Mensch 
+        //für eine bestimmte Instanz der Klasse Mensch
+        mensch1.ausgabeMensch();
+        mensch2.ausgabeMensch();
+        mensch3.ausgabeMensch();
     }
 
     // Update is called once per frame
@@ -106,5 +116,30 @@ public class NewBehaviourScript : MonoBehaviour
     {
         int ergebnis = zahl1 + zahl2;
         return ergebnis;
+    }
+
+    
+
+    //Klasse Mensch anlegen
+    public class Mensch
+    {
+        int alter;
+        string name;
+        string beruf;
+
+        public Mensch ( int dasAlter, string derName, string derBeruf)
+        {
+            alter = dasAlter;
+            name = derName;
+            beruf = derBeruf;
+        }
+
+        // Methode innerhalb der Klasse anlegen
+        public void ausgabeMensch()
+        {
+            Debug.Log("Ich bin " + alter + " Jahre alt. Mein Name ist " + name +
+                ". Mein Beruf ist " + beruf);
+
+        }
     }
 }
