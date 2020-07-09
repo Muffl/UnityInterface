@@ -127,6 +127,7 @@ public class NewBehaviourScript : MonoBehaviour
         string name;
         string beruf;
 
+        //Konstruktor anlegen
         public Mensch ( int dasAlter, string derName, string derBeruf)
         {
             alter = dasAlter;
