@@ -52,8 +52,42 @@ public class NewBehaviourScript : MonoBehaviour
         string[] name = new string[2] { "Joe ", "Muster" };
         Debug.Log(name[0] +name[1]);
 
-        
 
+        // For Schleife (Kopfgesteuert)
+        for (int i = 0; i < 5; i++)
+        {
+            Debug.Log("Die For-Zahl i ist " + i);
+        }
+
+
+        //Die while Schleife (Kopfgesteuert)
+        //Es wird erst die Bedingung geprüft, dann wird der Code ausgeführt
+        int a = 0;
+        while (a < 5)
+        {
+            Debug.Log(" Die while-Zahl a ist " + a);
+            a++;
+        }
+
+
+        // Die do-while Schleife (Fussgesteuert)
+        // Erst wird der Code ausgeführt, dann wird die Bedingung geprüft
+        int b = 10;
+        do
+        {
+            Debug.Log("Die do-while-Zahl b ist " + b);
+            
+        }
+        while (b < 5); // Bedingung nicht erfüllt, da b=10
+
+
+        // foreach Schleife
+        // Hier Abfrage des Arrays PrimZahlen
+        foreach (int number in primZahl)
+        {
+            Debug.Log("Die Primzahl ist " + number); 
+            // number enthält den Wert des Arrays
+        }
 
 
     }
@@ -61,8 +95,11 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+             
     }
+
+   
+
 
     // Methode addition
     int addition(int zahl1, int zahl2)
